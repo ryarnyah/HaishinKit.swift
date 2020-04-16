@@ -139,7 +139,7 @@ public class AVMixer {
     }
 
     private var _videoIO: VideoIOComponent?
-    var videoIO: VideoIOComponent! {
+    public var videoIO: VideoIOComponent! {
         if _videoIO == nil {
             _videoIO = VideoIOComponent(mixer: self)
         }
